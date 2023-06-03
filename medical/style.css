@@ -1,0 +1,130 @@
+.container {
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+}
+
+.top-heading {
+    font-family: 'Wix Madefor Text', sans-serif;
+    color: #B04759;
+    
+    
+}
+h1 {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0;
+}
+h3 {
+    margin: 0;
+}
+h5 {
+    margin: 0;
+}
+
+
+.outermost {
+    display: flex;
+    /* flex: 1.5fr 1fr; */
+    justify-content: space-between;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.second {
+    display: flex;
+    /* flex: 1fr 3fr; */
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.value-box, .heading-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+}
+
+.value-box > div {
+    font-weight: 900;
+}
+
+
+
+.table-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 150px;
+    /* font-size: 1.2rem; */
+}
+
+.tboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+.down-headings {
+    margin: 5px;
+}
+
+.dengue-box {
+    display: flex;
+    gap: 200px;
+    padding: 20px;
+}
+
+
+.background-image{
+   background-image: url('https://www.joonsquare.com/usermanage/image/business/st-joseph-s-hospital-ghaziabad-1860/st-joseph-s-hospital-ghaziabad-logo.png');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: 400px 400px;
+   width: 800px;
+   height: 1000px;
+   position: absolute;
+   z-index: -1;
+   /* top: 50%;
+   left: 50%; */
+   opacity: .2;
+}
+
+hr {
+    border: 2px solid #B04759;
+    margin: none;
+}
+
+.footer {
+    color: #B04759;
+    margin: none;
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.gyan {
+    font-family: 'Caveat', cursive;
+}
+
+.sign {
+    display: flex;
+    justify-content: end;
+}
+
+.sign-upper {
+    font-size: 20px;
+    color: black;
+    display: flex;
+    justify-content: end;
+}

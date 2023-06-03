@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: aliceblue;
+    margin: 50px auto;
+    height: 600px;
+    width: 80%;
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+}
+
+.container > div {
+    /* border: 2px solid black; */
+    width: 50%;
+    /* height: 80%; */
+
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.left {
+    /* border: 2px solid black; */
+    /* background-image: url('data:image/jpeg;base64,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'); */
+    background-repeat: repeat-y;
+    background-size: contain;
+
+}
+
+.h1 {
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-family: 'Source Sans Pro', sans-serif;}
+
+.input {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* width: 80%; */
+    align-items: center;
+    /* order: 166; */
+}
+
+input {
+    width: 80%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    color: grey;
+    border: none;
+    font-size: 16px;
+}
+
+.flex  {
+    display: flex;
+    justify-content: center;
+
+    order: 9;
+
+}
+
+.button {
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    /* display: flex; */
+    width: 80%;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgb(106, 106, 242);
+}
+
+.link {
+    /* display: flex; */
+    /* justify-content: center; */
+    margin-top: 8px;
+    /* text-decoration: none; */
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.foot {
+display: flex;
+/* position: relative; */
+top: 50%;
+flex-direction: column;
+justify-content: end;
+align-items: center; 
+margin-top: 10px;
+/* padding: 5px; */
+
+order: 200;
+ 
+}
+
+
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+
+body {
+    background-color: rgb(240, 232, 215);
+}
+
+
+
+.insta {
+    color: rgb(252, 198, 127);
+}
