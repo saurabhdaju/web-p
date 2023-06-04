@@ -28,21 +28,23 @@
 
 }
 
-.projects > .headings {
+.projects>.headings {
     color: white;
     margin: 50px auto 20px;
     font-family: 'Inter', sans-serif;
     font-size: large;
     text-align: center;
 }
-.projects > .headings h1 {
+
+.projects>.headings h1 {
     /* font-weight: 900; */
     margin: 0px;
-    
+
 }
-.projects > .headings h4{
+
+.projects>.headings h4 {
     color: #c4c8ce;
-    font-weight:100;
+    font-weight: 100;
 }
 
 
@@ -74,7 +76,7 @@
     padding: 30px 10px;
 }
 
-.card-img > img {
+.card-img>img {
     height: 250px;
     width: 250px;
     border-radius: 125px;
@@ -86,13 +88,13 @@
 
 }
 
-.card-text > h3 {
+.card-text>h3 {
     margin-top: 10px;
     color: white;
     font-weight: 100;
 }
 
-.card-text > span {
+.card-text>span {
     font-family: sans-serif;
 }
 
@@ -110,21 +112,24 @@ a {
     letter-spacing: 0.1em;
     transition: 0.5s;
 }
+
 a:hover {
     background: var(--clr);
     color: var(--clr);
     letter-spacing: 0.25em;
     /* box-shadow: 0 0 35px var(--clr); */
 }
+
 a:before {
     content: '';
     position: absolute;
     inset: 2px;
     background: #1f2937;
 }
+
 a span {
-position: relative;
-z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 a i {
@@ -132,6 +137,7 @@ a i {
     inset: 0;
     display: block;
 }
+
 a i::before {
     content: '';
     position: absolute;
@@ -143,6 +149,7 @@ a i::before {
     transform: translateX(-50%) skewX(325deg);
     transition: 0.5s;
 }
+
 a:hover i::before {
     width: 20px;
     left: 20%;
@@ -161,6 +168,7 @@ a i::after {
     transform: translateX(-50%) skewX(325deg);
     transition: 0.5s;
 }
+
 a:hover i::after {
     width: 20px;
     left: 80%;
@@ -169,12 +177,24 @@ a:hover i::after {
 
 
 @media screen and (max-width:600px) {
-    .cards-container{
+    .cards-container {
         display: flex;
         flex-direction: column;
     }
 
     .card {
         width: 80%;
+    }
+
+    .card-img>img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .card-img {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 100%;
     }
 }
